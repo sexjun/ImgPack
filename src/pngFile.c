@@ -98,9 +98,10 @@ bool readPngFile(const char *file_name)
     // 设置png大小的极限，下面数值是默认值2^31-1 (0x7fffffff)
     //png_set_user_limits(png_ptr, 0x7fffffff, 0x7fffffff);
 
-    // 
+     // 如果读取文件出错，会运行到这里。
     if (setjmp(png_jmpbuf(png_ptr)))
     {
+        printf("read data is get trouble\n");
        png_destroy_read_struct(&png_ptr, &info_ptr,
            0);
        fclose(fp);

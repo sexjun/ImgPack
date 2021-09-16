@@ -7,7 +7,7 @@ extern "C" {
 int main(int, char**) {
     std::cout << "Hello, world!\n";
 
-    if (readPngFile("..//images//a.png")) {
+    if (readPngFile("..//images//b.png")) {
         printf("read file success!\n");
     } else {
         printf("read file failed!\n");
