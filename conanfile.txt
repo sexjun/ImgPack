@@ -1,0 +1,12 @@
+[requires]
+libpng/1.6.37@bincrafters/stable
+
+[generators]
+cmake
+
+[options]
+*:shared=True
+
+[imports]
+bin, *.dll -> ./bin
+lib, *.dylib* -> ./bin

@@ -1,0 +1,9 @@
+{
+    "files.associations": {
+        "iostream": "cpp",
+        "png.h": "c",
+        "pnglibconf.h": "c",
+        "xiosbase": "c",
+        "xmemory": "c"
+    }
+}
